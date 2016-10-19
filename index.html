@@ -1,12 +1,119 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Глейси</title>
+</head>
+<body>
+  <div class="centering-container">
+    <!-- main-header -->
+    <header class="main-header">
+      <a class="logo-link">
+        <img src="" alt="Gllacy Shop" width="154" height="64">
+      </a>
+      <nav class="menu">
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a class="menu-link" href="#">Каталог</a>
+            
+            <ul class="catalog-menu display-none">
+              <li class="catalog-menu-item">
+                <a class="catalog-menu-link" href="#">Новинки</a>
+              </li>
+              <li class="catalog-menu-item">
+                <a class="catalog-menu-link" href="#">Сливочное</a>
+              </li>
+              <li class="catalog-menu-item">
+                <a class="catalog-menu-link" href="#">Щербеты</a>
+              </li>
+              <li class="catalog-menu-item">
+                <a class="catalog-menu-link" href="#">Фруктовый лед</a>
+              </li>
+              <li class="catalog-menu-item">
+                <a class="catalog-menu-link" href="#">Мелорин</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item"><a class="menu-link" href="#">Доставка и оплата</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">О компании</a></li>
+        </ul>
+      </nav>
+      
+      <div class="user-block">
+        <ul class="user-block-list">
+          <li class="user-block-item">
+            <a class="user-search" href="#">Поиск</a>
+            <div class="search-pop-up display-none">
+              <form action="#" method="get">
+                <div class="label-box">
+                  <label for="search-field">Что ищем?</label>
+                </div>
+                <input class="search-field" type="search" name="user-search" id="search-field">
+              </form>
+            </div>
+          </li>
+          <li class="user-block-item">
+            <a class="user-login" href="#">Вход</a>
+            <div class="authorized-pop-up display-none">
+              <form action="#" method="get">
+                <div class="label-box">
+                  <label for="email-field">Электронная почта</label>
+                </div>
+                <input class="email-field" type="email" name="user-email" id="email-field">
+                <div class="label-box">
+                  <label for="password-field">Пароль</label>
+                </div>
+                <input class="password-field" type="password" name="user-password" id="password-field">
+                <button class="button button-red" type="submit">Войти</button>
+                <div class="restore-and-sign-up">
+                  <a class="restore-link" href="#">Забыли пароль?</a>
+                  <a class="sign-up-link" href="#">Новая регистрация</a>
+                </div>
+              </form>
+            </div>
+          </li>
+          <li class="user-block-item"><a class="user-cart" href="#" id="user-cart">Корзина</a></li>
+        </ul>
+      </div>
+      <div class="work-time-container">
+        <span class="work-time">С 10 до 20, ежедневно</span>
+        <span class="work-phone">8 812 450-25-25</span>
+      </div>
+    </header><!-- main-header end -->
+    
+    <!-- promo-slider -->
+    <div class="promo-slider">
+      <input type="radio" id="promo-slide-1" name="promo-toggle" checked>
+      <input type="radio" id="promo-slide-2" name="promo-toggle">
+      <input type="radio" id="promo-slide-3" name="promo-toggle">
+      <div class="promo-slider-controls">
+        <label for="promo-slide-1"></label>
+        <label for="promo-slide-2"></label>
+        <label for="promo-slide-3"></label>
+      </div>
+      <div class="promo-slide">
+        <div class="slide-text">
+          <div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
+          <a href="#" class="button button-red">Давайте оба!</a>
+        </div>
+        <img src="#" width="700" height="600" alt="Крем-брюле и пломбир с малиновым джемом">
+      </div>
+      <div class="promo-slide">
+        <div class="slide-text">
+          <div class="slide-title">Шоколадный пломбир и лимонный сорбет</div>
+          <a href="#" class="button button-red">Давайте оба!</a>
+        </div>
+        <img src="#" width="700" height="600" alt="Шоколадный пломбир и лимонный сорбет">
+      </div>
+      <div class="promo-slide">
+        <div class="slide-text">
+          <div class="slide-title">Пломбир с помадкой и клубничный щербет</div>
+          <a href="#" class="button button-red">Давайте оба!</a>
+        </div>
+        <img src="" width="700" height="600" alt="Пломбир с помадкой и клубничный щербет">
+      </div>
+    </div><!-- promo-slider end -->
+    
+  </div>
+</body>
 </html>
