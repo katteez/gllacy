@@ -55,7 +55,7 @@
           <li class="user-block-item">
             <a class="user-login" href="#">Вход</a>
             <div class="authorized-pop-up display-none">
-              <form action="#" method="get">
+              <form action="#" method="post">
                 <div class="label-box">
                   <label for="user-email">Электронная почта</label>
                 </div>
@@ -139,7 +139,7 @@
         <div class="catalog-item-title">
           Сливочное с апельсиновым джемом и цитрусовой стружкой
         </div>
-        <div class="cost">310 Р./кг</div>
+        <div class="cost">310 &#8381; <span class="measure">/кг</span></div>
         <a class="button button-orange display-none" href="#">Быстрый просмотр</a>
       </article>
       <article class="catalog-item hit-mark">
@@ -147,7 +147,7 @@
         <div class="catalog-item-title">
           Сливочно-кофейное с кусочками шоколада
         </div>
-        <div class="cost">380 Р./кг</div>
+        <div class="cost">380 &#8381; <span class="measure">/кг</span>/div>
         <a class="button button-orange display-none" href="#">Быстрый просмотр</a>
       </article>
       <article class="catalog-item hit-mark">
@@ -155,7 +155,7 @@
         <div class="catalog-item-title">
           Сливочно-клубничное с присыпкой из белого шоколада
         </div>
-        <div class="cost">355 Р./кг</div>
+        <div class="cost">355 &#8381; <span class="measure">/кг</span>/div>
         <a class="button button-orange display-none" href="#">Быстрый просмотр</a>
       </article>
       <article class="catalog-item hit-mark">
@@ -163,7 +163,7 @@
         <div class="catalog-item-title">
           Сливочное крем-брюле с карамельной подливкой
         </div>
-        <div class="cost">415 Р./кг</div>
+        <div class="cost">415 &#8381; <span class="measure">/кг</span>/div>
         <a class="button button-orange display-none" href="#">Быстрый просмотр</a>
       </article>
     </section><!-- catalog end -->
@@ -174,24 +174,24 @@
         Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес
       </h1>
       <div class="row-container">
-        <p class="shop-features-item">
+        <p class="shop-features-item shop-features_ice-cream">
           Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
         </p>
-        <p class="shop-features-item">
+        <p class="shop-features-item shop-features_farm">
           Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывают долговременное сотрудничество.
         </p>
       </div>
       <div class="row-container">
-        <p class="shop-features-item">
+        <p class="shop-features-item shop-features_eco">
           Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального экологически чистого сырья.
         </p>
-        <p class="shop-features-item">
+        <p class="shop-features-item shop-features_delivery">
           Доставка нашего мороженого до заказчиков осуществляется в специально термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
         </p>
       </div>
     </section><!-- shop-features end -->
     
-    <!-- last-news -->
+    <!-- last-news-subscription -->
     <section class="last-news-subscription">
       <div class="last-news">
         <span class="last-news-note">Новое в нашем блоге</span>
@@ -201,13 +201,15 @@
         <p class="subscription-text">
           Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
         </p>
-        <div class="label-box">
-          <label for="email-field">Электронная почта</label>
-        </div>
-        <input class="email-field" type="email" name="subscription-email" id="subscription-email">
-        <button class="button button-orange" type="submit">Отправить</button>
+        <form action="#" method="post">
+          <div class="label-box">
+            <label for="email-field">Электронная почта</label>
+          </div>
+          <input class="email-field" type="email" name="subscription-email" id="subscription-email">
+          <button class="button button-orange" type="submit">Отправить</button>
+        </form>
       </div>
-    </section><!-- last-news end -->
+    </section><!-- last-news-subscription end -->
     
     <!-- map-container -->
     <div class="map-container">
@@ -236,7 +238,7 @@
       </div>
       <ul class="footer-nav">
         <li class="footer-nav-item">
-          <a class="footer-nav-link" href="#">Для поставщиков</a>
+          <a class="footer-nav-link footer-nav-link_heart" href="#">Для поставщиков</a>
         </li>
         <li class="footer-nav-item">
           <a class="footer-nav-link" href="#">Наши документы</a>
