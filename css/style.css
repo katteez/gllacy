@@ -9,6 +9,221 @@ h1 {
   font-size: 35px;
   line-height: 41px;
 }
-.page-container {
-  background: #849d8f;
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.display-none {
+  display: none;
+}
+.page-wrapper {
+  min-width: 900px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #849d8f url(../img/slide1.png) no-repeat center 84px;
+}
+.content-wrapper {
+  padding: 0 2.2%;
+}
+
+/********** Хедер **********/
+.main-header {
+  padding-top: 9px;
+}
+.logo-link {
+  position: relative;
+  float: left;
+  width: 154px;
+  margin-left: -6px;
+  margin-right: 30px;
+  line-height: 0;
+}
+.nav {
+  float: left;
+  width: calc(65% - 170px);
+  margin-top: 18px;
+}
+.nav-list,
+.user-block-list{
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+.nav-item {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 18px;
+  vertical-align: middle;
+}
+.user-block {
+  float: right;
+  width: 262px;
+  margin-top: 18px;
+}
+.user-block-item {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  vertical-align: middle;
+}
+.telephone-order {
+  clear: both;
+  float: right;
+  width: 200px;
+}
+.telephone-order .call-time {
+  display: block;
+  text-align: right;
+  font-size: 14px;
+  line-height: 16px;
+}
+.telephone-order .telephone {
+  display: block;
+  text-align: right;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+/********** Слайдер **********/
+.promo-slider {
+  margin-bottom: 35px;
+  padding-top: 277px;
+  text-align: center;
+}
+.promo-slide-title {
+  width: 670px;
+  margin: 0 auto;
+  margin-bottom: 39px;
+  font-size: 60px;
+  line-height: 60px;
+}
+.promo-slide .button {
+  display: inline-block;
+  height: 64px;
+  vertical-align: top;
+}
+.promo-slide {
+  display: none;
+  /*background: radial-gradient(at top center, rgb(255, 255, 255), rgb(215, 215, 215));*/
+}
+.promo-slide:nth-child(1) { /* удалить после стилизации слайдера */
+  display: block;
+}
+body > input[type="radio"] {
+  display: none;
+}
+
+/********** Баннеры **********/
+.banner-container {
+  min-height: 229px;
+  margin-bottom: 40px;
+}
+.banner:first-child {
+  float: left;
+  width: 48.9%;
+  min-height: 229px;
+  background-image: url(../img/raspberry_bg.png);
+}
+.banner:last-child {
+  float: right;
+  width: 48.9%;
+  min-height: 229px;
+  background-image: url(../img/chocolate_bg.png);
+}
+
+/********** Каталог **********/
+.catalog {
+  font-size: 0;
+}
+.catalog-item {
+  position: relative;
+  display: inline-block;
+  width: 23.35%;
+  margin-bottom: 40px;
+  margin-right: 2.2%;
+  font-size: 16px;
+  line-height: 22px;
+  vertical-align: top;
+}
+.catalog-item:nth-child(4n) {
+  margin-right: 0;
+}
+.catalog-item img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5px;
+  font-size: 0;
+}
+.catalog-item .cost {
+  position: absolute;
+  top: 0;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+/********** Особенности магазина **********/
+.shop-features {
+  margin-bottom: 40px;
+  padding-top: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-image: url(../img/waffle_bg.jpg);
+  border-radius: 12px;
+  font-size: 0;
+  color: #323232;
+}
+.shop-features-title {
+  margin: 0;
+  margin-bottom: 22px;
+  font-size: 24px;
+  line-height: 30px;
+}
+.shop-features-item {
+  display: inline-block;
+  width: calc(48.9% - 57px);
+  margin: 0;
+  margin-bottom: 23px;
+  padding-left: 57px;
+  font-size: 16px;
+  line-height: 22px;
+  vertical-align: top;
+}
+.shop-features-item:first-child {
+  margin-right: 2.2%;
+}
+
+/********** Новости и подписка на них **********/
+.last-news-subscription {
+  min-height: 220px;
+  margin-bottom: 40px;
+}
+.last-news {
+  float: left;
+  width: 48.9%;
+  min-height: 220px;
+  color: #323232;
+  background-image: url(../img/strawberry_bg.png.jpg);
+  border-radius: 12px;
+}
+.subscription{
+  float: right;
+  width: 48.9%;
+  min-height: 220px;
+  color: #5a5a5a;
+  background-color: #f8f7f4;
+  border-radius: 12px;
+}
+
+/********** Карта **********/
+.map-container{
+  position: relative;
+  height: 430px;
+  color: #000000;
+}
+.gllacy-data {
+  position: absolute;
+  width: 302px;
+  right: 2.2%;
+  background-color: #ffffff;
 }
