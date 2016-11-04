@@ -22,9 +22,7 @@ h1 {
   max-width: 1200px;
   margin: 0 auto;
   background-color: #849d8f;
-  background: 
-    url(../img/slide1.png) no-repeat center 84px,
-    radial-gradient(circle closest-corner at center 350px, #cdf4df, #adcebc, #9bb8a8, #849d8f);
+  background: linear-gradient(#9db1a5, #849d8f 35%);
 }
 .content-wrapper {
   padding: 0 2.2%;
@@ -45,7 +43,6 @@ h1 {
   padding-top: 9px;
 }
 .logo-link {
-  position: relative;
   float: left;
   width: 154px;
   margin-left: -6px;
@@ -108,10 +105,18 @@ h1 {
   color: #323232;
   background-color: #f8f7f4;
 }
+.user-cart + .added-items-pop-up {
+  position: absolute;
+  width: 540px;
+  right: 0;
+  color: #323232;
+  background-color: #f8f7f4;
+}
 .telephone-order {
-  clear: both;
+  text-align: right;
+}
+.telephone-and-breadcrumbs-container .telephone-order {
   float: right;
-  width: 200px;
 }
 .telephone-order .call-time {
   display: block;
@@ -145,7 +150,7 @@ h1 {
   vertical-align: top;
 }
 .promo-slide {
-  display: none;  
+  display: none;
 }
 .promo-slide:nth-child(1) { /* удалить после стилизации слайдера */
   display: block;
@@ -173,9 +178,12 @@ body > input[type="radio"] {
   background: #40271b url(../img/chocolate_bg.png) no-repeat;
 }
 
-/********** Каталог **********/
+/********** Каталог товаров **********/
 .catalog {
   font-size: 0;
+}
+.catalog_margin-bottom {
+  margin-bottom: 45px;
 }
 .catalog-item {
   position: relative;
@@ -247,7 +255,7 @@ body > input[type="radio"] {
   background: #ffffff url(../img/strawberry_bg.png.jpg);
   border-radius: 12px;
 }
-.subscription{
+.subscription {
   float: right;
   width: 48.9%;
   min-height: 220px;
@@ -257,7 +265,7 @@ body > input[type="radio"] {
 }
 
 /********** Карта **********/
-.map-container{
+.map-container {
   position: relative;
   height: 430px;
   color: #000000;
@@ -267,6 +275,74 @@ body > input[type="radio"] {
   width: 302px;
   right: 2.2%;
   background-color: #ffffff;
+}
+
+/********** Хлебные крошки **********/
+.breadcrumbs {
+  float: left;
+  margin: 0;
+  margin-top: 22px;
+  padding: 0;
+  list-style: none;
+}
+.breadcrumbs-item {
+  display: inline-block;
+}
+
+/********** Фильтр каталога **********/
+.catalog-title {
+  margin: 0;
+  margin-bottom: 27px;
+}
+.catalog-filter {
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 16px;
+}
+.filter-sorting,
+.filter-price,
+.filter-richness,
+.filter-filling,
+.catalog-filter .button-white {
+  display: inline-block;
+  margin-bottom: 15px;
+  vertical-align: middle;
+}
+.filter-sorting {
+  width: 194px;
+}
+.filter-price {;
+  width: 220px;
+}
+.filter-richness {
+  width: 415px;
+}
+.filter-filling {
+  width: 703px;
+}
+.filter-title {
+  display: inline-block;
+  margin-bottom: 7px;
+  vertical-align: top;
+}
+.filter-controls {
+  height: 36px;
+}
+.catalog-filter .button-white {
+  width: 144px;
+}
+
+/********** Пагинация **********/
+.catalog-pagination {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  text-align: right;
+  list-style: none;
+}
+.pagination-item {
+  display: inline-block;
+  vertical-align: top;
 }
 
 /********** Футер **********/
