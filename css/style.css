@@ -21,10 +21,23 @@ h1 {
   min-width: 900px;
   max-width: 1200px;
   margin: 0 auto;
-  background: #849d8f url(../img/slide1.png) no-repeat center 84px;
+  background-color: #849d8f;
+  background: 
+    url(../img/slide1.png) no-repeat center 84px,
+    radial-gradient(circle closest-corner at center 350px, #cdf4df, #adcebc, #9bb8a8, #849d8f);
 }
 .content-wrapper {
   padding: 0 2.2%;
+}
+
+/********** Модальное окно "Обратная связь" **********/
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #323232;
+  background-color: #f8f7f4;
 }
 
 /********** Хедер **********/
@@ -49,12 +62,25 @@ h1 {
   margin: 0;
   padding: 0;
   font-size: 0;
+  list-style: none;
 }
 .nav-item {
+  position: relative;
   display: inline-block;
   font-size: 16px;
   line-height: 18px;
   vertical-align: middle;
+}
+.subnav {
+  position: absolute;
+  left: 0;
+  width: 143px;
+  padding: 0;
+  background-color: #f8f7f4;
+  list-style: none;
+}
+.subnav-link {
+  color: #323232;
 }
 .user-block {
   float: right;
@@ -62,10 +88,25 @@ h1 {
   margin-top: 18px;
 }
 .user-block-item {
+  position: relative;
   display: inline-block;
   font-size: 14px;
   line-height: 16px;
   vertical-align: middle;
+}
+.user-search + .search-pop-up {
+  position: absolute;
+  left: -303px;
+  width: 342px;
+  color: #999999;
+  background-color: #f8f7f4;
+}
+.user-login + .authorized-pop-up {
+  position: absolute;
+  right: 0;
+  width: 278px;
+  color: #323232;
+  background-color: #f8f7f4;
 }
 .telephone-order {
   clear: both;
@@ -104,8 +145,7 @@ h1 {
   vertical-align: top;
 }
 .promo-slide {
-  display: none;
-  /*background: radial-gradient(at top center, rgb(255, 255, 255), rgb(215, 215, 215));*/
+  display: none;  
 }
 .promo-slide:nth-child(1) { /* удалить после стилизации слайдера */
   display: block;
@@ -119,17 +159,18 @@ body > input[type="radio"] {
   min-height: 229px;
   margin-bottom: 40px;
 }
+.banner {
+  width: 48.9%;
+  min-height: 229px;
+  border-radius: 12px;
+}
 .banner:first-child {
   float: left;
-  width: 48.9%;
-  min-height: 229px;
-  background-image: url(../img/raspberry_bg.png);
+  background: #741e31 url(../img/raspberry_bg.png) no-repeat;
 }
 .banner:last-child {
-  float: right;
-  width: 48.9%;
-  min-height: 229px;
-  background-image: url(../img/chocolate_bg.png);
+  float: right; 
+  background: #40271b url(../img/chocolate_bg.png) no-repeat;
 }
 
 /********** Каталог **********/
@@ -168,7 +209,7 @@ body > input[type="radio"] {
   padding-top: 22px;
   padding-left: 20px;
   padding-right: 20px;
-  background-image: url(../img/waffle_bg.jpg);
+  background: #ede1c7 url(../img/waffle_bg.jpg);
   border-radius: 12px;
   font-size: 0;
   color: #323232;
@@ -203,7 +244,7 @@ body > input[type="radio"] {
   width: 48.9%;
   min-height: 220px;
   color: #323232;
-  background-image: url(../img/strawberry_bg.png.jpg);
+  background: #ffffff url(../img/strawberry_bg.png.jpg);
   border-radius: 12px;
 }
 .subscription{
@@ -226,4 +267,46 @@ body > input[type="radio"] {
   width: 302px;
   right: 2.2%;
   background-color: #ffffff;
+}
+
+/********** Футер **********/
+.main-footer {
+  padding-top: 36px;
+  padding-bottom: 29px;
+  font-size: 13px;
+  line-height: 18px;
+}
+.social {
+  float: left;
+  width: 24.45%;
+  margin-right: 2.2%;
+}
+.footer-nav {
+  float: left;
+  width: 46.7%;
+  margin: 0;
+  margin-right: 2.2%;
+  padding: 0;
+  padding-left: calc(24.406% - 164px);
+  box-sizing: border-box;
+}
+.footer-nav-item {
+  display: inline-block;
+  margin-right: 27px;
+  text-align: left;
+  list-style: none;
+}
+.footer-nav-item:nth-child(odd) {
+  width: 113px;
+}
+.footer-nav-item:nth-child(even) {
+  width: 52%;
+  margin-right: 0;
+}
+.copyright {
+  float: right;
+  width: 24.45%;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: right;
 }
