@@ -117,6 +117,7 @@ h1 {
 }
 .telephone-and-breadcrumbs-container .telephone-order {
   float: right;
+  width: 250px;
 }
 .telephone-order .call-time {
   display: block;
@@ -280,13 +281,18 @@ body > input[type="radio"] {
 /********** Хлебные крошки **********/
 .breadcrumbs {
   float: left;
+  width: 500px;
   margin: 0;
   margin-top: 22px;
   padding: 0;
+  font-size: 0;
   list-style: none;
 }
 .breadcrumbs-item {
   display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  vertical-align: top;
 }
 
 /********** Фильтр каталога **********/
@@ -296,8 +302,7 @@ body > input[type="radio"] {
 }
 .catalog-filter {
   margin-bottom: 24px;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 0;
 }
 .filter-sorting,
 .filter-price,
@@ -306,6 +311,8 @@ body > input[type="radio"] {
 .catalog-filter .button-white {
   display: inline-block;
   margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 16px;
   vertical-align: middle;
 }
 .filter-sorting {
@@ -337,12 +344,15 @@ body > input[type="radio"] {
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
+  font-size: 0;
   text-align: right;
   list-style: none;
 }
 .pagination-item {
   display: inline-block;
   vertical-align: top;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 /********** Футер **********/
@@ -350,7 +360,7 @@ body > input[type="radio"] {
   padding-top: 36px;
   padding-bottom: 29px;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 16px;
 }
 .social {
   float: left;
@@ -363,13 +373,17 @@ body > input[type="radio"] {
   margin: 0;
   margin-right: 2.2%;
   padding: 0;
+  font-size: 0;
   padding-left: calc(24.406% - 164px);
   box-sizing: border-box;
 }
 .footer-nav-item {
   display: inline-block;
   margin-right: 27px;
+  font-size: 13px;
+  line-height: 16px;
   text-align: left;
+  vertical-align: top;
   list-style: none;
 }
 .footer-nav-item:nth-child(odd) {
@@ -383,6 +397,6 @@ body > input[type="radio"] {
   float: right;
   width: 24.45%;
   font-size: 12px;
-  line-height: 18px;
+  line-height: 16px;
   text-align: right;
 }
