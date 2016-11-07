@@ -253,7 +253,7 @@ body > input[type="radio"] {
   width: 48.9%;
   min-height: 220px;
   color: #323232;
-  background: #ffffff url(../img/strawberry_bg.png.jpg);
+  background: #ffffff url(../img/strawberry_bg.png);
   border-radius: 12px;
 }
 .subscription {
