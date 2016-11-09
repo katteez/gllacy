@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Глейси</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -48,10 +49,10 @@
               <a class="user-search" href="#">Поиск</a>
               <div class="search-pop-up display-none">
                 <form action="#" method="get">
+                  <input class="search-field" type="search" name="user-search" id="search-field" required>
                   <div class="label-box">
                     <label for="search-field">Что ищем?</label>
                   </div>
-                  <input class="search-field" type="search" name="user-search" id="search-field">
                 </form>
               </div>
             </li>
@@ -59,24 +60,24 @@
               <a class="user-login" href="#">Вход</a>
               <div class="authorized-pop-up display-none">
                 <form action="#" method="post">
+                  <input class="authorized-field" type="email" name="user-email" id="user-email" required>
                   <div class="label-box">
                     <label for="user-email">Электронная почта</label>
                   </div>
-                  <input class="email-field" type="email" name="user-email" id="user-email">
+                  <input class="authorized-field" type="password" name="user-password" id="password-field" required>
                   <div class="label-box">
                     <label for="password-field">Пароль</label>
                   </div>
-                  <input class="password-field" type="password" name="user-password" id="password-field">
                   <button class="button button-orange" type="submit">Войти</button>
                   <div class="restore-and-sign-up">
-                    <a class="restore-link" href="#">Забыли пароль?</a>
+                    <a class="restore-link" href="#">Забыли пароль?</a><br>
                     <a class="sign-up-link" href="#">Новая регистрация</a>
                   </div>
                 </form>
               </div>
             </li>
             <li class="user-block-item">
-              <a class="user-cart" href="#" id="user-cart">Корзина</a>
+              <a class="user-cart user-cart_full" href="#" id="user-cart">2 товара</a>
               <div class="added-items-pop-up display-none">
                 <div class="added-item">
                   <button class="delete">Удалить</button>

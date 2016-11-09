@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Глейси</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,12 +16,12 @@
       <!-- main-header -->
       <header class="main-header clearfix">
         <a class="logo-link">
-          <img src="img/logo.png" alt="Gllacy Shop" width="154" height="64">
+          <img src="img/logo.png" width="154" height="64" alt="Gllacy Shop">
         </a>
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-item">
-              <a class="nav-link" href="catalog.html">Каталог</a>
+              <a class="nav-link" href="#">Каталог</a>
 
               <ul class="subnav display-none">
                 <li class="subnav-item">
@@ -51,10 +52,10 @@
               <a class="user-search" href="#">Поиск</a>
               <div class="search-pop-up display-none">
                 <form action="#" method="get">
+                  <input class="search-field" type="search" name="user-search" id="search-field" required>
                   <div class="label-box">
                     <label for="search-field">Что ищем?</label>
                   </div>
-                  <input class="search-field" type="search" name="user-search" id="search-field">
                 </form>
               </div>
             </li>
@@ -62,17 +63,17 @@
               <a class="user-login" href="#">Вход</a>
               <div class="authorized-pop-up display-none">
                 <form action="#" method="post">
+                  <input class="authorized-field" type="email" name="user-email" id="user-email" required>
                   <div class="label-box">
                     <label for="user-email">Электронная почта</label>
                   </div>
-                  <input class="email-field" type="email" name="user-email" id="user-email">
+                  <input class="authorized-field" type="password" name="user-password" id="password-field" required>
                   <div class="label-box">
                     <label for="password-field">Пароль</label>
                   </div>
-                  <input class="password-field" type="password" name="user-password" id="password-field">
                   <button class="button button-orange" type="submit">Войти</button>
                   <div class="restore-and-sign-up">
-                    <a class="restore-link" href="#">Забыли пароль?</a>
+                    <a class="restore-link" href="#">Забыли пароль?</a><br>
                     <a class="sign-up-link" href="#">Новая регистрация</a>
                   </div>
                 </form>
@@ -199,10 +200,10 @@
             Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
           </p>
           <form action="#" method="post">
-            <div class="label-box">
-              <label for="email-field">Электронная почта</label>
-            </div>
             <input class="email-field" type="email" name="subscription-email" id="subscription-email">
+            <div class="label-box">
+              <label for="subscription-email">Электронная почта</label>
+            </div>
             <button class="button button-orange" type="submit">Отправить</button>
           </form>
         </div>
@@ -259,18 +260,18 @@
         <div class="modal-feedback-title">
           Мы обязательно вам ответим!
         </div>
+        <input class="name-field" type="text" name="user-name" id="user-name">
         <div class="label-box">
           <label for="user-name">Как вас зовут?</label>
         </div>
-        <input class="name-field" type="text" name="user-name" id="user-name">
-        <div class="label-box">
-          <label for="user-email">Ваша почта для ответа?</label>
-        </div>
         <input class="email-field" type="email" name="feedback-email" id="feedback-email">
+        <div class="label-box">
+          <label for="feedback-email">Ваша почта для ответа?</label>
+        </div>
+        <textarea class="feedback-field" name="user-feedback" id="user-feedback" cols="50" rows="7"></textarea>
         <div class="label-box">
           <label for="user-feedback">Напишите что-нибудь...</label>
         </div>
-        <textarea class="feedback-field" name="user-feedback" id="user-feedback" cols="50" rows="7"></textarea>
         <button class="button button-orange" type="submit">Отправить</button>
         <button class="button" type="button">Закрыть</button>
       </section><!-- modal-feedback end -->
