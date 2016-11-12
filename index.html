@@ -67,14 +67,14 @@
                   <div class="label-box">
                     <label for="user-email">Электронная почта</label>
                   </div>
-                  <input class="authorized-field" type="password" name="user-password" id="password-field" required>
+                  <input class="authorized-field" type="password" name="user-password" id="password-field" autocomplete="off" required>
                   <div class="label-box">
                     <label for="password-field">Пароль</label>
                   </div>
                   <button class="button button-orange" type="submit">Войти</button>
                   <div class="restore-and-sign-up">
-                    <a class="restore-link" href="#">Забыли пароль?</a><br>
-                    <a class="sign-up-link" href="#">Новая регистрация</a>
+                    <a class="link_black restore-link" href="#">Забыли пароль?</a><br>
+                    <a class="link_black sign-up-link" href="#">Новая регистрация</a>
                   </div>
                 </form>
               </div>
@@ -133,35 +133,51 @@
       <!-- catalog -->
       <section class="catalog">
         <article class="catalog-item hit-mark">
-          <img src="img/cream-orangeJam-orangeTopping.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-          <div class="catalog-item-title">
-            Сливочное с апельсиновым джемом и цитрусовой стружкой
+          <div class="catalog-item-img-container">
+            <img src="img/cream-orangeJam-orangeTopping.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <div class="cost">310&#8381;<span class="measure">/кг</span></div>
           </div>
-          <div class="cost">310 &#8381; <span class="measure">/кг</span></div>
+          <div class="catalog-item-title-container">
+            <a class="link-white catalog-item-title" href="#">
+              Сливочное с апельсиновым джемом и цитрусовой стружкой
+            </a>
+          </div>
           <a class="button button-orange display-none" href="#">Быстрый просмотр</a>
         </article>
         <article class="catalog-item hit-mark">
-          <img src="img/cream-coffee-chocolateTopping.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-          <div class="catalog-item-title">
-            Сливочно-кофейное с кусочками шоколада
+          <div class="catalog-item-img-container">
+            <img src="img/cream-coffee-chocolateTopping.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            <div class="cost">380&#8381;<span class="measure">/кг</span></div>
           </div>
-          <div class="cost">380 &#8381; <span class="measure">/кг</span></div>
+          <div class="catalog-item-title-container">
+            <a class="link-white catalog-item-title" href="#">
+              Сливочно-кофейное с кусочками шоколада
+            </a>
+          </div>
           <a class="button button-orange display-none" href="#">Быстрый просмотр</a>
         </article>
         <article class="catalog-item hit-mark">
-          <img src="img/cream-strawberry-whiteChocolateTopping.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-          <div class="catalog-item-title">
-            Сливочно-клубничное с присыпкой из белого шоколада
+          <div class="catalog-item-img-container">
+            <img src="img/cream-strawberry-whiteChocolateTopping.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <div class="cost">355&#8381;<span class="measure">/кг</span></div>
           </div>
-          <div class="cost">355 &#8381; <span class="measure">/кг</span></div>
+          <div class="catalog-item-title-container">
+            <a class="link-white catalog-item-title" href="#">
+              Сливочно-клубничное с присыпкой из белого шоколада
+            </a>
+          </div>
           <a class="button button-orange display-none" href="#">Быстрый просмотр</a>
         </article>
         <article class="catalog-item hit-mark">
-          <img src="img/cream-cremeBrulee-caramelTopping.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-          <div class="catalog-item-title">
-            Сливочное крем-брюле с карамельной подливкой
+          <div class="catalog-item-img-container">
+            <img src="img/cream-cremeBrulee-caramelTopping.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+            <div class="cost">415&#8381;<span class="measure">/кг</span></div>
           </div>
-          <div class="cost">415 &#8381; <span class="measure">/кг</span></div>
+          <div class="catalog-item-title-container">
+            <a class="link-white catalog-item-title" href="#">
+              Сливочное крем-брюле с карамельной подливкой
+            </a>
+          </div>
           <a class="button button-orange display-none" href="#">Быстрый просмотр</a>
         </article>
       </section><!-- catalog end -->
@@ -169,7 +185,7 @@
       <!-- shop-features -->
       <section class="shop-features">
         <h1 class="shop-features-title">
-          Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес
+          Магазин Глейси &#160;— это онлайн и офлайн магазин по продаже мороженого собственного производства на развес
         </h1>
         <div class="row-container">
           <p class="shop-features-item shop-features_ice-cream">
@@ -181,10 +197,10 @@
         </div>
         <div class="row-container">
           <p class="shop-features-item shop-features_eco">
-            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального экологически чистого сырья.
+            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
           </p>
           <p class="shop-features-item shop-features_delivery">
-            Доставка нашего мороженого до заказчиков осуществляется в специально термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+            Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
           </p>
         </div>
       </section><!-- shop-features end -->
@@ -193,16 +209,20 @@
       <section class="last-news-subscription clearfix">
         <div class="last-news">
           <span class="last-news-note">Новое в нашем блоге</span>
-          <a class="last-news-title" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+          <div class="last-news-title-container">
+            <a class="link_black last-news-title" href="#">10 &#160;способов сервировки фруктовых щербетов к столу</a>
+          </div>
         </div>
         <div class="subscription">
           <p class="subscription-text">
             Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
           </p>
           <form action="#" method="post">
-            <input class="email-field" type="email" name="subscription-email" id="subscription-email">
-            <div class="label-box">
-              <label for="subscription-email">Электронная почта</label>
+            <div class="column-container">
+              <input class="email-field" type="email" name="subscription-email" id="subscription-email" required>
+              <div class="label-box">
+                <label for="subscription-email">Электронная почта</label>
+              </div>
             </div>
             <button class="button button-orange" type="submit">Отправить</button>
           </form>
@@ -238,20 +258,20 @@
         </div>
         <ul class="footer-nav">
           <li class="footer-nav-item">
-            <a class="footer-nav-link footer-nav-link_heart" href="#">Для поставщиков</a>
+            <a class="link-white footer-nav-link footer-nav-link_heart" href="#">Для поставщиков</a>
           </li>
           <li class="footer-nav-item">
-            <a class="footer-nav-link" href="#">Наши документы</a>
+            <a class="link-white footer-nav-link" href="#">Наши документы</a>
           </li>
           <li class="footer-nav-item">
-            <a class="footer-nav-link" href="#">О производстве</a>
+            <a class="link-white footer-nav-link" href="#">О производстве</a>
           </li>
           <li class="footer-nav-item">
-            <a class="footer-nav-link" href="#">Экологические стандарты</a>
+            <a class="link-white footer-nav-link" href="#">Экологические стандарты</a>
           </li>
         </ul>
         <p class="copyright">
-          Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2016
+          Сделано в <a class="link-white" href="https://htmlacademy.ru">HTML Academy</a> &copy; 2016
         </p>
       </footer><!-- main-footer end -->
 
