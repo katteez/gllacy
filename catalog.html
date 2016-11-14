@@ -120,7 +120,7 @@
             <a class="link-white breadcrumbs-link" href="#">Каталог</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="link-white breadcrumbs-link">Сливочное</a>
+            <a class="breadcrumbs-link">Сливочное</a>
           </li>
         </ul>
       </div>
@@ -146,9 +146,9 @@
             <div class="price-controls filter-controls">
               <div class="range-scale">
                 <div class="range-bar"></div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
               </div>
-              <div class="range-toggle range-toggle-min"></div>
-              <div class="range-toggle range-toggle-max"></div>
             </div>
           </div>
           <div class="filter-richness">
@@ -156,14 +156,14 @@
               Жирность:
             </span>
             <div class="richness-controls filter-controls">
-              <input type="radio" name="zero" id="zero">
-              <label for="0">0%</label>
-              <input type="radio" name="to_10" id="to_10" checked>
-              <label for="0">до 10%</label>
-              <input type="radio" name="to_30" id="to_30">
-              <label for="0">до 30%</label>
-              <input type="radio" name="over_30" id="over_30">
-              <label for="0">свыше 30%</label>
+              <input type="radio" name="richness" id="zero">
+              <label for="zero">0%</label>
+              <input type="radio" name="richness" id="to_10" checked>
+              <label for="to_10">до 10%</label>
+              <input type="radio" name="richness" id="to_30">
+              <label for="to_30">до 30%</label>
+              <input type="radio" name="richness" id="over_30">
+              <label for="over_30">выше 30%</label>
             </div>
           </div>
           <div class="filter-filling">
@@ -183,7 +183,7 @@
               <label for="jam">джемы</label>
             </div>
           </div>
-          <button class="button-white" type="submit">Применить</button>
+          <button class="button button-white" type="submit">Применить</button>
         </form>
       </section><!-- catalog-filter end -->
 
