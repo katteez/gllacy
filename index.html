@@ -244,10 +244,9 @@
         </section>
       </div><!-- last-news-subscription end -->
     </div>
-     
+    
     <!-- map-container -->
     <div class="map-container">
-      <div class="map" id="map"></div>
       <div class="content-wrapper">
         <div class="gllacy-data">
           <p class="gllacy-address-block">
@@ -259,9 +258,10 @@
             <span class="gllacy-telephone">8 812 450-25-25</span>
             <span class="gllacy-call-time">(с 10 до 20 ежедневно)</span>
           </p>
-          <a class="button button-orange" href="#">Форма обратной связи</a>
+          <a class="button button-orange" href="#" id="button-open-feedback">Форма обратной связи</a>
         </div>
       </div>
+      <div class="map" id="map"></div>
     </div><!-- map-container end -->
       
     <div class="content-wrapper">
@@ -295,27 +295,32 @@
       </div>
       
       <!-- modal-feedback -->
-      <section class="modal-content modal-feedback display-none">
+      <section class="modal-content modal-feedback">
         <div class="modal-feedback-title">
           Мы обязательно вам ответим!
         </div>
-        <input class="name-field" type="text" name="user-name" id="user-name" required>
-        <div class="label-box">
-          <label for="user-name">Как вас зовут?</label>
-        </div>
-        <input class="email-field" type="email" name="feedback-email" id="feedback-email" required>
-        <div class="label-box">
-          <label for="feedback-email">Ваша почта для ответа?</label>
-        </div>
-        <textarea class="feedback-field" name="user-feedback" id="user-feedback" cols="50" rows="5" required></textarea>
-        <div class="label-box">
-          <label for="user-feedback">Напишите что-нибудь...</label>
-        </div>
-        <button class="button button-orange" type="submit">Отправить</button>
+        <form action="#" method="post">
+          <input class="name-field" type="text" name="user-name" id="user-name" required>
+          <div class="label-box">
+            <label for="user-name">Как вас зовут?</label>
+          </div>
+          <input class="email-field" type="email" name="feedback-email" id="feedback-email" required>
+          <div class="label-box">
+            <label for="feedback-email">Ваша почта для ответа?</label>
+          </div>
+          <textarea class="feedback-field" name="user-feedback" id="user-feedback" cols="50" rows="5" required></textarea>
+          <div class="label-box">
+            <label for="user-feedback">Напишите что-нибудь...</label>
+          </div>
+          <button class="button button-orange" type="submit">Отправить</button>
+        </form>
         <button class="button-close" type="button">Закрыть</button>
       </section><!-- modal-feedback end -->
-      <div class="modal-overlay display-none"></div>
+      <div class="modal-overlay"></div>
     </div>
   </div>
+  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5ETwSX_pAzmXaCs2Q9LQvuMMqxH_7Dxc" async defer></script>
+  <script src="js/pop-up.js"></script>
 </body>
 </html>

@@ -162,6 +162,13 @@ input[type="password"]:not(:focus):valid:hover,
 textarea:not(:focus):valid:hover {
   margin-bottom: 19px;
 }
+input[type="text"]:required,
+input[type="search"]:required,
+input[type="email"]:required,
+input[type="password"]:required,
+textarea:required {
+  outline: 0;
+}
 
 /***** Общие стили для подписей к текстовым полям *****/
 .label-box {
@@ -301,6 +308,7 @@ input[type="checkbox"]:disabled + label {
 
 /********** Общие стили для модальных окон **********/
 .modal-content {
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -327,17 +335,6 @@ input[type="checkbox"]:disabled + label {
 .modal-content .button-close:focus {
   outline: 0;
 }
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 90;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-/********** Модальное окно "Обратная связь" **********/
 .modal-content .button-close::before,
 .modal-content .button-close::after {
   position: absolute;
@@ -353,6 +350,24 @@ input[type="checkbox"]:disabled + label {
 .modal-content .button-close::after {
   transform: rotate(-45deg);
 }
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 90;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.modal-content.show {
+  display: block;
+}
+.modal-overlay.show {
+  display: block;
+}
+
+/********** Модальное окно "Обратная связь" **********/
 .modal-feedback {
   width: 429px;
   min-height: 398px;
@@ -388,6 +403,30 @@ input[type="checkbox"]:disabled + label {
   float: right;
   padding: 10px 21px;
   border-radius: 25px;
+}
+.modal-feedback.show{
+  animation: scale 0.7s;
+}
+.modal-feedback::after {
+  position: absolute;
+  content: 'Заполните все поля';
+  display: none;
+  bottom: 27px;
+  left: 24px;
+  color: #df1b1b;
+}
+.modal-feedback.modal-error::after {
+  display: block;
+}
+
+/********** Анимация "Масштаб" **********/
+@keyframes scale{
+  from{
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+  to{
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 /********** Хедер **********/
@@ -1177,6 +1216,10 @@ body > input[type="radio"] {
   color: #000000;
   background: url(../img/map.png) center center no-repeat;
 }
+.map{
+  width: 100%;
+  height: 430px;
+}
 .map-container .content-wrapper {
   position: relative;
 }
@@ -1184,6 +1227,7 @@ body > input[type="radio"] {
   position: absolute;
   top: 62px;
   right: 2.2%;
+  z-index: 90;
   width: 252px;
   min-height: 277px;
   padding: 0 25px;
