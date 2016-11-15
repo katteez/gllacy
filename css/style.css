@@ -29,9 +29,13 @@ h1 {
 }
 .site-wrapper:before {
   background: url(../img/slide2.png) no-repeat center 84px,
+      -webkit-radial-gradient(circle closest-corner at center 350px, #cce0f1, #a9baca, #a3b3c3, #8996a6);
+  background: url(../img/slide2.png) no-repeat center 84px,
       radial-gradient(circle closest-corner at center 350px, #cce0f1, #a9baca, #a3b3c3, #8996a6);
 }
 .site-wrapper:after {
+  background: url(../img/slide3.png) no-repeat center 84px,
+    -webkit-radial-gradient(circle closest-corner at center 350px, #efd9d0, #c6b2aa, #beaba3, #9d8b84);
   background: url(../img/slide3.png) no-repeat center 84px,
     radial-gradient(circle closest-corner at center 350px, #efd9d0, #c6b2aa, #beaba3, #9d8b84);
 }
@@ -83,14 +87,17 @@ a:focus {
   outline: 0;
 }
 .button-orange {
+  background: -webkit-linear-gradient(top, #f26843, #e74a35);
   background: linear-gradient(to bottom, #f26843, #e74a35);
   box-shadow: 0 1px 2px 0 #ac1000;
 }
 .button-orange:hover {
+  background: -webkit-linear-gradient(top, #f58669, #ec6f5e);
   background: linear-gradient(to bottom, #f58669, #ec6f5e);
   cursor: pointer;
 }
 .button-orange:active {
+  background: -webkit-linear-gradient(top, #e74a35, #f26843);
   background: linear-gradient(to bottom, #e74a35, #f26843);
   box-shadow: inset 0 1px 2px 0 #942718;
 }
@@ -188,19 +195,22 @@ textarea:focus + .label-box label {
   font-size: 11px;
   line-height: 13px;
   color: #5b9ddf;
-  transform: translateY(-24px);
+  -webkit-transform: translateY(-24px);
+          transform: translateY(-24px);
   pointer-events: auto;
 }
 input:not(:focus):valid + .label-box label,
 textarea:not(:focus):valid + .label-box label {
   font-size: 11px;
   line-height: 13px;
-  transform: translateY(-24px);
+  -webkit-transform: translateY(-24px);
+          transform: translateY(-24px);
   pointer-events: auto;
 }
 input:not(:focus):valid:hover + .label-box label,
 textarea:not(:focus):valid:hover + .label-box label {
-  transform: translateY(-24px);
+  -webkit-transform: translateY(-24px);
+          transform: translateY(-24px);
 }
 
 /********** Общие стили для радиобаттонов **********/
@@ -312,7 +322,8 @@ input[type="checkbox"]:disabled + label {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 100;
   padding: 0 24px;
   padding-top: 15px;
@@ -345,10 +356,12 @@ input[type="checkbox"]:disabled + label {
   background-color: #000000;
 }
 .modal-content .button-close::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .modal-content .button-close::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 .modal-overlay {
   display: none;
@@ -405,7 +418,8 @@ input[type="checkbox"]:disabled + label {
   border-radius: 25px;
 }
 .modal-feedback.show{
-  animation: scale 0.7s;
+  -webkit-animation: scale 0.7s;
+          animation: scale 0.7s;
 }
 .modal-feedback::after {
   position: absolute;
@@ -420,12 +434,24 @@ input[type="checkbox"]:disabled + label {
 }
 
 /********** Анимация "Масштаб" **********/
-@keyframes scale{
+@-webkit-keyframes scale{
   from{
-    transform: translate(-50%, -50%) scale(0.7);
+    -webkit-transform: translate(-50%, -50%) scale(0.7);
+            transform: translate(-50%, -50%) scale(0.7);
   }
   to{
-    transform: translate(-50%, -50%) scale(1);
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+}
+@keyframes scale{
+  from{
+    -webkit-transform: translate(-50%, -50%) scale(0.7);
+            transform: translate(-50%, -50%) scale(0.7);
+  }
+  to{
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
   }
 }
 
@@ -781,7 +807,8 @@ input[type="checkbox"]:disabled + label {
   width: 1px;
   height: 13px;
   background-color: #3e3e3e;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .added-item .delete::after {
   position: absolute;
@@ -792,7 +819,8 @@ input[type="checkbox"]:disabled + label {
   width: 13px;
   height: 1px;
   background-color: #3e3e3e;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .added-item img {
   margin-right: 12px;
@@ -908,15 +936,22 @@ body > input[type="radio"] {
   background-color: #849d8f;
   background: 
     url(../img/slide1.png) no-repeat center 84px,
+    -webkit-radial-gradient(circle closest-corner at center 350px, #cdf4df, #adcebc, #9bb8a8, #849d8f);
+  background: 
+    url(../img/slide1.png) no-repeat center 84px,
     radial-gradient(circle closest-corner at center 350px, #cdf4df, #adcebc, #9bb8a8, #849d8f);
 }
 #promo-slide-2:checked ~ .page-wrapper {
   background-color: #8996a6;
   background: url(../img/slide2.png) no-repeat center 84px,
+      -webkit-radial-gradient(circle closest-corner at center 350px, #cce0f1, #a9baca, #a3b3c3, #8996a6);
+  background: url(../img/slide2.png) no-repeat center 84px,
       radial-gradient(circle closest-corner at center 350px, #cce0f1, #a9baca, #a3b3c3, #8996a6);
 }
 #promo-slide-3:checked ~ .page-wrapper {
   background-color: #9d8b84;
+  background: url(../img/slide3.png) no-repeat center 84px,
+    -webkit-radial-gradient(circle closest-corner at center 350px, #efd9d0, #c6b2aa, #beaba3, #9d8b84);
   background: url(../img/slide3.png) no-repeat center 84px,
     radial-gradient(circle closest-corner at center 350px, #efd9d0, #c6b2aa, #beaba3, #9d8b84);
 }
@@ -1164,6 +1199,7 @@ body > input[type="radio"] {
   padding-top: 33px;
   padding-left: 26px;
   padding-right: 23px;
+  background-image: -webkit-repeating-linear-gradient(315deg, #f8f7f4 0px, #f8f7f4 7px, #92cdff 7px, #92cdff 14px, #f8f7f4 14px, #f8f7f4 21px, #fe9e90 21px, #fe9e90 28px);
   background-image: repeating-linear-gradient(135deg, #f8f7f4 0px, #f8f7f4 7px, #92cdff 7px, #92cdff 14px, #f8f7f4 14px, #f8f7f4 21px, #fe9e90 21px, #fe9e90 28px);
   border-radius: 16px;
   color: #5a5a5a;
@@ -1397,7 +1433,8 @@ body > input[type="radio"] {
   left: 117px;
 }
 .price-controls .range-toggle:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .filter-richness {
   width: 415px;
@@ -1496,10 +1533,10 @@ a[class^="pagination-"] {
   height: 2px;
   background-color: #ffffff;
 }
-.pagination-prev[disabled]::before,
-.pagination-next[disabled]::before,
-.pagination-prev[disabled]::after,
-.pagination-next[disabled]::after {
+.pagination-link_disabled::before,
+.pagination-link_disabled::before,
+.pagination-link_disabled::after,
+.pagination-link_disabled::after {
   opacity: 0.2;
 }
 .pagination-prev::before,
@@ -1518,11 +1555,13 @@ a[class^="pagination-"] {
 }
 .pagination-prev::before,
 .pagination-next::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 .pagination-prev::after,
 .pagination-next::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 /********** Футер **********/
