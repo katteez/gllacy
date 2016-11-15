@@ -49,7 +49,7 @@ window.onload = function () {
     center: new google.maps.LatLng(59.9389, 30.3259)
   }
   var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-  var image = "../img/map-marker.png";
+  var image = "img/map-marker.png";
   var myLatLng = new google.maps.LatLng(59.9385, 30.3229);
   var beachMarker = new google.maps.Marker({
     position: myLatLng,
