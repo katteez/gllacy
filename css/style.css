@@ -21,19 +21,21 @@ h1 {
 .page-wrapper {
   min-width: 900px;
   background-color: #849d8f;
+  background-repeat: no-repeat;
+  background-position: center 84px, center;
 }
-.site-wrapper:before,
-.site-wrapper:after {
+.page-wrapper::before,
+.page-wrapper::after {
   content: "";
   visibility: hidden;
 }
-.site-wrapper:before {
+.page-wrapper::before {
   background: url(../img/slide2.png) no-repeat center 84px,
       -webkit-radial-gradient(circle closest-corner at center 350px, #cce0f1, #a9baca, #a3b3c3, #8996a6);
   background: url(../img/slide2.png) no-repeat center 84px,
       radial-gradient(circle closest-corner at center 350px, #cce0f1, #a9baca, #a3b3c3, #8996a6);
 }
-.site-wrapper:after {
+.page-wrapper::after {
   background: url(../img/slide3.png) no-repeat center 84px,
     -webkit-radial-gradient(circle closest-corner at center 350px, #efd9d0, #c6b2aa, #beaba3, #9d8b84);
   background: url(../img/slide3.png) no-repeat center 84px,
@@ -47,7 +49,7 @@ h1 {
   padding: 0 2.2%;
 }
 
-/********** Общие стили ссылок **********/
+/*************** Общие стили ссылок ***************/
 .link-white {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   color: rgb(255, 255, 255);
@@ -70,7 +72,7 @@ a:focus {
   outline: 0;
 }
 
-/********** Общие стили кнопок **********/
+/*************** Общие стили кнопок ***************/
 .button {
   display: inline-block;
   border: 0;
@@ -119,7 +121,7 @@ a:focus {
   box-shadow: inset 0 2px 1px #696969;
 }
 
-/********** Общие стили для текстовых полей **********/
+/************ Общие стили для полей форм ************/
 input[type="text"],
 input[type="search"],
 input[type="email"],
@@ -138,6 +140,9 @@ textarea {
   color: #323232;
   font-family: "Roboto", "Arial", "sans-serif";
   box-sizing: border-box;
+}
+textarea {
+  resize: none;
 }
 input[type="text"]:hover,
 input[type="search"]:hover,
@@ -175,9 +180,27 @@ input[type="email"]:required,
 input[type="password"]:required,
 textarea:required {
   outline: 0;
+  box-shadow: none;
+}
+select {
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+select::-ms-expand {
+    display: none;
+}
+select option {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
+  background-color: #ffffff;
 }
 
-/***** Общие стили для подписей к текстовым полям *****/
+/******* Общие стили для подписей к полям форм *******/
 .label-box {
   position: relative;
 }
@@ -265,7 +288,7 @@ input[type="radio"]:disabled + label {
   cursor: default;
 }
 
-/********** Общие стили для чекбоксов **********/
+/************ Общие стили для чекбоксов ************/
 input[type="checkbox"] {
   display: none;
 }
@@ -418,8 +441,8 @@ input[type="checkbox"]:disabled + label {
   border-radius: 25px;
 }
 .modal-feedback.show{
-  -webkit-animation: scale 0.7s;
-          animation: scale 0.7s;
+  -webkit-animation: scale 0.5s;
+          animation: scale 0.5s;
 }
 .modal-feedback::after {
   position: absolute;
@@ -455,7 +478,7 @@ input[type="checkbox"]:disabled + label {
   }
 }
 
-/********** Хедер **********/
+/*************** Хедер ***************/
 .main-header {
   padding-top: 9px;
 }
@@ -478,21 +501,16 @@ input[type="checkbox"]:disabled + label {
   font-size: 0;
   list-style: none;
 }
+.nav-item,
+.user-block-item {
+  padding-bottom: 5px;
+}
 .nav-item {
   position: relative;
   display: inline-block;
   font-size: 16px;
   line-height: 18px;
   vertical-align: middle;
-}
-.nav-item:hover::after,
-.user-block-item:hover::after {
-  position: absolute;
-  content: '';
-  display: table;
-  bottom: -5px;
-  width: 100%;
-  height: 5px;
 }
 .nav-link {
   position: relative;
@@ -722,6 +740,7 @@ input[type="checkbox"]:disabled + label {
   font-weight: 400;
   color: #323232;
   background-color: transparent;
+  vertical-align: top;
 }
 .authorized-pop-up .restore-link {
   margin-top: 2px;
@@ -881,7 +900,7 @@ input[type="checkbox"]:disabled + label {
   line-height: 24px;
 }
 
-/********** Слайдер **********/
+/*************** Слайдер ***************/
 .promo-slider {
   position: relative;
   margin-bottom: 42px;
@@ -934,25 +953,23 @@ body > input[type="radio"] {
 }
 #promo-slide-1:checked ~ .page-wrapper {
   background-color: #849d8f;
-  background: 
-    url(../img/slide1.png) no-repeat center 84px,
+  background-image: url(../img/slide1.png),
     -webkit-radial-gradient(circle closest-corner at center 350px, #cdf4df, #adcebc, #9bb8a8, #849d8f);
-  background: 
-    url(../img/slide1.png) no-repeat center 84px,
+  background-image: url(../img/slide1.png),
     radial-gradient(circle closest-corner at center 350px, #cdf4df, #adcebc, #9bb8a8, #849d8f);
 }
 #promo-slide-2:checked ~ .page-wrapper {
   background-color: #8996a6;
-  background: url(../img/slide2.png) no-repeat center 84px,
+  background-image: url(../img/slide2.png),
       -webkit-radial-gradient(circle closest-corner at center 350px, #cce0f1, #a9baca, #a3b3c3, #8996a6);
-  background: url(../img/slide2.png) no-repeat center 84px,
+  background-image: url(../img/slide2.png),
       radial-gradient(circle closest-corner at center 350px, #cce0f1, #a9baca, #a3b3c3, #8996a6);
 }
 #promo-slide-3:checked ~ .page-wrapper {
   background-color: #9d8b84;
-  background: url(../img/slide3.png) no-repeat center 84px,
+  background-image: url(../img/slide3.png),
     -webkit-radial-gradient(circle closest-corner at center 350px, #efd9d0, #c6b2aa, #beaba3, #9d8b84);
-  background: url(../img/slide3.png) no-repeat center 84px,
+  background-image: url(../img/slide3.png),
     radial-gradient(circle closest-corner at center 350px, #efd9d0, #c6b2aa, #beaba3, #9d8b84);
 }
 #promo-slide-1:checked ~ .page-wrapper label[for="promo-slide-1"],
@@ -961,7 +978,7 @@ body > input[type="radio"] {
   background-color: #ffffff;
 }
 
-/********** Баннеры **********/
+/*************** Баннеры ***************/
 .banner-container {
   min-height: 229px;
   margin-bottom: 40px;
@@ -1077,7 +1094,7 @@ body > input[type="radio"] {
 }
 .catalog-item img {
   width: 100%;
-  height: 100%;
+  height: auto;
   font-size: 0;
 }
 .catalog-item .cost {
@@ -1246,7 +1263,7 @@ body > input[type="radio"] {
   border-radius: 25px;
 }
 
-/********** Карта **********/
+/*************** Карта ***************/
 .map-container {
   height: 430px;
   color: #000000;
@@ -1385,17 +1402,15 @@ body > input[type="radio"] {
 }
 .sorting-controls {
   width: 194px;
-  padding-left: 11px;
+  padding-left: 15px;
+  padding-right: 30px;
   color: #ffffff;
+  background: rgba(255, 255, 255, 0.2) url(../img/icon-select_white.png) no-repeat 170px 50%;
 }
 .sorting-controls:hover {
   color: #323232;
-  background-color: #ffffff;
-}
-.sorting-controls:focus {
-  color: #323232;
-  background-color: #ffffff;
-  outline: 0;
+  background: #ffffff url(../img/icon-select_black.png) no-repeat 170px 50%;
+  cursor: pointer;
 }
 .filter-price {
   width: 220px;
@@ -1449,6 +1464,7 @@ body > input[type="radio"] {
 .richness-controls label,
 .filling-controls label {
   display: inline-block;
+  vertical-align: top;
 }
 .filter-filling {
   width: 703px;
@@ -1465,7 +1481,7 @@ body > input[type="radio"] {
   padding: 9px 0;
 }
 
-/********** Пагинация **********/
+/*************** Пагинация ***************/
 .catalog-pagination {
   position: relative;
   margin: 0;
@@ -1564,7 +1580,7 @@ a[class^="pagination-"] {
           transform: rotate(45deg);
 }
 
-/********** Футер **********/
+/*************** Футер ***************/
 .main-footer {
   padding-top: 36px;
   padding-bottom: 29px;
@@ -1586,6 +1602,7 @@ a[class^="pagination-"] {
   border-radius: 50%;
   font-size: 0;
   background-image: url(../img/sprite.png);
+  vertical-align: top;
   opacity: 0.8;
 }
 .social-button:last-child {
