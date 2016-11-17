@@ -1,22 +1,20 @@
 /********** Модальное окно "Обратная связь" **********/
-var btnOpenFeedback = document.querySelector("#button-open-feedback"),
-    popupFeedback = document.querySelector(".modal-feedback"),
-    btnCloseFeedback = document.querySelector(".modal-feedback .button-close"),
-    overlay = document.querySelector(".modal-overlay");
-    
+var btnOpenFeedback = document.querySelector("#button-open-feedback");
+var popupFeedback = document.querySelector(".modal-feedback");
+var btnCloseFeedback = document.querySelector(".modal-feedback .button-close");
+var overlay = document.querySelector(".modal-overlay");
+
 if (btnOpenFeedback && popupFeedback && btnCloseFeedback) {
-  form = popupFeedback.querySelector("form");
-  fieldName = popupFeedback.querySelector("#user-name");
-  fieldEmail = popupFeedback.querySelector("#feedback-email");
-  fieldText = popupFeedback.querySelector("#user-feedback");
-  
+  var form = popupFeedback.querySelector("form");
+  var fieldName = popupFeedback.querySelector("#user-name");
+  var fieldEmail = popupFeedback.querySelector("#feedback-email");
+  var fieldText = popupFeedback.querySelector("#user-feedback");
   btnOpenFeedback.addEventListener("click", function (event) {
     event.preventDefault();
     popupFeedback.classList.add("show");
     overlay.classList.add("show");
     fieldName.focus();
   });
-
   form.addEventListener("submit", function (event) {
     if (!fieldName.value || !fieldEmail.value || !fieldText.value) {
       event.preventDefault();

@@ -190,7 +190,7 @@ select {
           appearance: none;
 }
 select::-ms-expand {
-    display: none;
+  display: none;
 }
 select option {
   font-size: 14px;
@@ -372,7 +372,7 @@ input[type="checkbox"]:disabled + label {
 .modal-content .button-close::before,
 .modal-content .button-close::after {
   position: absolute;
-  content: '';
+  content: "";
   display: table;
   width: 22px;
   height: 2px;
@@ -446,7 +446,7 @@ input[type="checkbox"]:disabled + label {
 }
 .modal-feedback::after {
   position: absolute;
-  content: 'Заполните все поля';
+  content: "Заполните все поля";
   display: none;
   bottom: 27px;
   left: 24px;
@@ -522,7 +522,7 @@ input[type="checkbox"]:disabled + label {
 }
 .nav-link::after {
   position: absolute;
-  content: '';
+  content: "";
   display: table;
   bottom: 7px;
   width: calc(100% - 28px);
@@ -572,7 +572,7 @@ input[type="checkbox"]:disabled + label {
 }
 .subnav-item:first-child::after {
   position: absolute;
-  content: '';
+  content: "";
   display: table;
   bottom: 0;
   left: 6px;
@@ -684,7 +684,7 @@ input[type="checkbox"]:disabled + label {
 }
 .user-login::before {
   position: absolute;
-  content: '';
+  content: "";
   display: table;
   top: 6px;
   left: 16px;
@@ -752,7 +752,7 @@ input[type="checkbox"]:disabled + label {
 }
 .user-cart::before {
   position: absolute;
-  content: '';
+  content: "";
   display: table;
   top: 6px;
   left: 16px;
@@ -794,7 +794,7 @@ input[type="checkbox"]:disabled + label {
 }
 .added-item:last-of-type::after {
   position: absolute;
-  content: '';
+  content: "";
   display: table;
   bottom: -18px;
   width: 100%;
@@ -819,7 +819,7 @@ input[type="checkbox"]:disabled + label {
 }
 .added-item .delete::before {
   position: absolute;
-  content: '';
+  content: "";
   display: table;
   top: -2px;
   left: 4px;
@@ -831,7 +831,7 @@ input[type="checkbox"]:disabled + label {
 }
 .added-item .delete::after {
   position: absolute;
-  content: '';
+  content: "";
   display: table;
   top: 4px;
   left: -2px;
@@ -1052,7 +1052,7 @@ body > input[type="radio"] {
 }
 .catalog-item:hover::after {
   position: absolute;
-  content: '';
+  content: "";
   display: block;
   top: -7px;
   bottom: -76px;
@@ -1079,7 +1079,7 @@ body > input[type="radio"] {
 }
 .hit-mark::before {
   position: absolute;
-  content: '';
+  content: "";
   display: table;
   z-index: 1;
   top: 0;
@@ -1156,7 +1156,7 @@ body > input[type="radio"] {
 }
 .shop-features-item::before {
   position: absolute;
-  content: '';
+  content: "";
   display: table;
   top: -12px;
   left: 1px;
@@ -1224,7 +1224,7 @@ body > input[type="radio"] {
 }
 .subscription::before {
   position: absolute;
-  content: '';
+  content: "";
   display: table;
   top: 5px;
   left: 5px;
@@ -1354,7 +1354,7 @@ body > input[type="radio"] {
 }
 .breadcrumbs-link[href]::after {
   position: absolute;
-  content: '»';
+  content: "»";
   display: table;
   top: 0;
   right: -14px;
@@ -1493,7 +1493,7 @@ body > input[type="radio"] {
 }
 .catalog-pagination::after {
   position: absolute;
-  content: '';
+  content: "";
   display: table;
   bottom: 0;
   width: 100%;
@@ -1543,7 +1543,7 @@ a[class^="pagination-"] {
 .pagination-prev::after,
 .pagination-next::after {
   position: absolute;
-  content: '';
+  content: "";
   display: table;
   width: 10px;
   height: 2px;
@@ -1660,7 +1660,7 @@ a[class^="pagination-"] {
 }
 .footer-nav-link_heart::before {
   position: absolute;
-  content: '';
+  content: "";
   display: table;
   top: 3px;
   left: -22px;
@@ -1680,7 +1680,7 @@ a[class^="pagination-"] {
 }
 .copyright::before {
   position: absolute;
-  content: '';
+  content: "";
   display: table;
   top: -43px;
   left: 2px;
